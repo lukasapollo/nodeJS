@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "createServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasapollo/nodeJS.git"
+  },
+  "author": "Lukas Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukasapollo/nodeJS/issues"
+  },
+  "homepage": "https://github.com/lukasapollo/nodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
