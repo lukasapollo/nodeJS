@@ -6,7 +6,7 @@ app.get('/', function(req, res){
 })
 
 app.get('/tecnologia', function(req, res){
-    res.send("<h1>Pagina Tecnologia</h1>")
+    res.render("assets/tecnologia.ejs")
 })
 
 app.get('/contato', function(req, res){
