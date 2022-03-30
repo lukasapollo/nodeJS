@@ -2,14 +2,21 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res){
-    res.send("<h1>Pagina Home</h1>")
+    res.render("home/index.ejs")
 })
 
-app.get('/tecnologia', function(req, res){
-    res.render("assets/tecnologia.ejs")
+app.get('/formulario_inclusao_noticia', function(req, res){
+    res.render("admin/form_add_noticia.ejs")
 })
 
-app.get('/contato', function(req, res){
-    res.send("<h1>Pagina de contato</h1>")
+app.get('/noticias', function(req, res){
+    res.render("noticias/noticias.ejs")
 })
-app.listen(4100, x => console.log({ Status: "Server rodando com express", PORT: 4100 }))
+
+const server = {
+    PORT: 4100,
+    message(){
+        console.log("Server rodando com express - Porta: 4100")
+    }
+}
+app.listen(server.PORT, server.message)
