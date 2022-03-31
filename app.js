@@ -1,17 +1,14 @@
-var express = require('express');
-var app = express();
+const app = require('./config/server')
 
-app.get('/', function(req, res){
-    res.render("home/index.ejs")
-})
+const rotaNoticias = require('./app/routes/noticias')
+rotaNoticias(app)
 
-app.get('/formulario_inclusao_noticia', function(req, res){
-    res.render("admin/form_add_noticia.ejs")
-})
+const rotaInclusaoNoticias = require('./app/routes/inclusaoNoticias')
+rotaInclusaoNoticias(app)
 
-app.get('/noticias', function(req, res){
-    res.render("noticias/noticias.ejs")
-})
+const rotaHome = require('./app/routes/home')
+rotaHome(app)
+
 
 const server = {
     PORT: 4100,
