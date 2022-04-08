@@ -16,3 +16,8 @@ module.exports = (application) => {
         })
     })
 }
+
+// Nota: provavelmente possa aparecer duvidas em relação ao parametro (application)
+// passado pela nossa função anonima já que não fazemos nenhum require em nenhum outro aquivo dessa função.
+// Isso é possivel pelo fato de estarmos usando o consign. 
+// Para melhor entendimento sobre leia os comentarios do aquivo [server.js] que se encronta em "config/server.js"
